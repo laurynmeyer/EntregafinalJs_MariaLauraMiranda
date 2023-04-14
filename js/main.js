@@ -44,14 +44,12 @@ class ProductoController {
           </div>
             `
         })
-    }
-}
+    }}
 
 const controladorProductos = new ProductoController()
 controladorProductos.leerProductos()
 const stock_productos = document.getElementById("stock_productos")
 controladorProductos.mostrarEnDOM(stock_productos)
-
 
 class CarritoController {
     constructor() {
@@ -104,18 +102,20 @@ class CarritoController {
                 this.eliminar(producto)
                 localStorage.setItem("listaCarrito", JSON.stringify(this.listaCarrito))
                 this.mostrarEnDOM(contenedor_carrito)
+                this.mostrarPrecioEnDom(precio)
             })
         })
     }
 
-    /**   mostrarPrecioEnDom(precio){
-          precio.innerHTML = this.calcularTotal()
-  
-      }
-  
-      calcularTotal(){
-          return this.listaCarrito.reduce((acumulador, producto) => acumulador + producto.precio * producto.cantidad, 0)
-      }**/
+    mostrarPrecioEnDom(precio) {
+        precio.innerHTML = this.calcularTotal()
+
+
+    }
+
+    calcularTotal() {
+        return this.listaCarrito.reduce((acumulador, producto) => acumulador + producto.precio * producto.cantidad, 0)
+    }
 
     limpiarCarrito() {
         this.listaCarrito = []
@@ -129,7 +129,6 @@ const contenedor_carrito = document.getElementById("contenedor_carrito")
 controladorCarrito.mostrarEnDOM(contenedor_carrito)
 const precio = document.getElementById("precio")
 
-controladorCarrito.mostrarEnDOM(contenedor_carrito)
 
 controladorProductos.listaProductos.forEach(producto => {
     const agregarProducto = document.getElementById(`idProducto${producto.id}`)
@@ -139,6 +138,7 @@ controladorProductos.listaProductos.forEach(producto => {
         controladorCarrito.agregarProducto(producto)
         controladorCarrito.leerProductos()
         controladorCarrito.mostrarEnDOM(contenedor_carrito)
+        controladorCarrito.mostrarPrecioEnDom(precio)
         Toastify({
             text: "Añadido al carrito",
             duration: 3000,
@@ -147,16 +147,17 @@ controladorProductos.listaProductos.forEach(producto => {
             style: {
                 background: "linear-gradient(to right, #00b09b, #96c93d)",
             }
-        }).showToast();        
+        }).showToast();
     })
-
-    controladorCarrito.mostrarPrecioEnDom(precio)
 })
 
 const finalizar_compra = document.getElementById("finalizar_compra")
+
 finalizar_compra.addEventListener("click", () => {
     if (controladorCarrito.listaCarrito.length > 0) {
         controladorCarrito.limpiarCarrito()
+        controladorCarrito.mostrarEnDOM(contenedor_carrito)
+        controladorCarrito.mostrarPrecioEnDom(precio)
         Swal.fire({
             position: 'center',
             icon: 'success',
@@ -170,17 +171,8 @@ finalizar_compra.addEventListener("click", () => {
             title: 'Oops...',
             text: 'Aún no seleccionaste ningún producto',
         })
-        
     }
 })
-
-
-
-
-
-
-
-
 
 
 

@@ -1,0 +1,110 @@
+ [
+    {
+        "id": 1,
+        "marca": "Lenovo ",
+        "disco": "512 GB SSD",
+        "ram": "8GB RAM",
+        "procesador": "CORE I5-1135G7",
+        "precio": 237499,
+        "stock": 12,
+        "cantidad": 1,
+        "envio": 2000,
+        "img": "assets/img/notebook1.jpg"
+    },
+    {
+        "id": 2,
+        "marca": "Dell ",
+        "disco": "512 GB SSD",
+        "ram": "16GB RAM",
+        "procesador": "CORE I7-1135G7",
+        "precio": 437499,
+        "stock": 4,
+        "cantidad": 1,
+        "envio": 2000,
+        "img": "assets/img/notebook2.jpg"
+    },
+    {
+        "id": 3,
+        "marca": "HP ",
+        "disco": "256 GB SSD",
+        "ram": "16GB RAM",
+        "procesador": "CORE I3-1135G7",
+        "precio": 224499,
+        "stock": 9,
+        "cantidad": 1,
+        "envio": 2000,
+        "img": "assets/img/notebook3.jpg"
+    },
+    {
+        "id": 4,
+        "marca": "Lenovo",
+        "disco": "512 GB SSD",
+        "ram": "16GB RAM",
+        "procesador": "CORE I3-1135G7",
+        "precio": 384499,
+        "stock": 9,
+        "cantidad": 1,
+        "envio": 2000,
+        "img": "assets/img/notebook4.jpg"
+    },
+    {
+        "id": 5,
+        "marca": "Dell",
+        "disco": "256 GB SSD",
+        "ram": "8GB RAM",
+        "procesador": "CORE I3-1135G7",
+        "precio": 258499,
+        "stock": 8,
+        "cantidad": 1,
+        "envio": 2000,
+        "img": "assets/img/notebook5.jpg"
+    },
+    {
+        "id": 6,
+        "marca": "HP",
+        "disco": "256 GB SSD",
+        "ram": "8GB RAM",
+        "procesador": "CORE I5-1135G7",
+        "precio": 232499,
+        "stock": 7,
+        "cantidad": 1,
+        "envio": 2000,
+        "img": "assets/img/notebook6.jpg"
+    },
+    {
+        "id": 7,
+        "marca": "Lenovo",
+        "disco": "256 GB SSD",
+        "ram": "4GB RAM",
+        "procesador": "CORE I3-1135G7",
+        "precio": 137499,
+        "stock": 10,
+        "cantidad": 1,
+        "envio": 2000,
+        "img": "assets/img/notebook7.jpg"
+    },
+    {
+        "id": 8,
+        "marca": "Lenovo",
+        "disco": "512 GB SSD",
+        "ram": "16GB RAM",
+        "procesador": "CORE I5-1135G7",
+        "precio": 339499,
+        "stock": 17,
+        "cantidad": 1,
+        "envio": 2000,
+        "img": "assets/img/notebook8.jpg"
+    },
+    {
+        "id": 9,
+        "marca": "HP",
+        "disco": "512 GB SSD",
+        "ram": "4GB RAM",
+        "procesador": "CORE I3-1135G7",
+        "precio": 158499,
+        "stock": 5,
+        "cantidad": 1,
+        "envio": 2000,
+        "img": "assets/img/notebook9.jpg"
+    }
+]
